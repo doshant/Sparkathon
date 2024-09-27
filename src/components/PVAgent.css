@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    padding: 0;
+    padding-top: 70px;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    background-color: rgb(224, 224, 224);
+  }
+  
+  .whole {
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  
+  .typing-animation {
+    margin: 20px 0;
+    font-size: 1.5rem;
+    color: #001E96;
+    height: 120px;
+    
+  }
+  
+  /* Upload Section for left and right tiles */
+  .upload-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Add gap between left and right sections */
+    margin: 20px 0;
+  }
+  
+  /* Section titles */
+  .section-title {
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-size: 2.3rem;
+  }
+  
+  /* Styling for Left and Right Sections */
+  .left-section, .right-section {
+    flex: 1;
+    border-left: 2px solid #04263c;
+    padding-left: 20px;
+  }
+  
+  /* Left and Right tiles grid */
+  .left-tiles, .right-tiles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for both left and right tiles */
+    gap: 10px;
+    width: 100%; /* Ensure the tiles take full width */
+    grid-auto-rows: 150px; /* Set a uniform height for tiles */
+  }
+  
+  .tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #008ce3;
+    color: #ccc;
+    transition: background-color 0.3s;
+  }
+  
+  .tile:hover {
+    background-color: #054f80;
+  }
+  
+  .uploaded-files {
+    margin-top: 20px;
+    overflow: hidden;
+  }
+  
+
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f4f4f4;
+  }
+  
+  td {
+    background-color: #fff;
+  }
+
+  .form-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .left-dropdown {
+    flex: 1;
+  }
+  
+  .left-sub{
+    flex:1;
+    margin-left: 100px;
+    height: 30px;
+    font-size: 1rem;
+  }
+
+  .right-submit {
+    flex: 1;
+    text-align: right;
+  }
+  
+  select {
+    padding: 8px;
+    font-size: 1rem;
+  }
+  
+  button {
+    padding: 8px 16px;
+    font-size: 1rem;
+    background-color: #007BCC;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .tile.active {
+    background-color: #001E96; /* Color when the tile is active/clicked */
+  }
+
+  
+  .tile1 {
+    cursor: pointer;
+    border: 1px solid #ccc; /* Add some border */
+    border-radius: 8px; /* Rounded corners */
+    margin: 10px; /* Spacing between tiles */
+    overflow: hidden; /* Hide overflow if needed */
+    width: 250px; /* Set a fixed width for the tiles */
+    height: 150px; 
+    display: flex; /* Use flexbox to center the image */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+  }
+  
+  .tile1.active {
+    border: 2px solid #008CE3; /* Highlight active tile */
+  }
+  

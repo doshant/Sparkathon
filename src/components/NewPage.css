@@ -1,0 +1,93 @@
+.new-page-container {
+    padding: 20px;
+  }
+  
+  .info-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .info-table th,
+  .info-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .adv-eff-container {
+    display: flex;              /* Use flexbox for horizontal layout */
+    flex-wrap: wrap;           /* Allow wrapping to the next line if necessary */
+    gap: 10px;                 /* Add space between boxes */
+  }
+  
+  .adv-eff-item {
+    display: flex;
+    align-items: center;       /* Center items vertically */
+  }
+  
+  .adv-eff-box {
+    background-color: #008CE3; /* Change this color as needed */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: relative;        /* For absolute positioning of the cross */
+    display: flex;            /* Use flexbox for alignment */
+    align-items: center;      /* Center content vertically */
+  }
+  
+  .remove-cross {
+    color: #D6454A;           /* Soft Red color */
+    cursor: pointer;
+    font-size: 30px;          /* Adjust size as needed */
+    position: absolute;       /* Absolute positioning */
+    right: 5px;               /* Position from the right edge */
+    top: 50%;                 /* Center vertically */
+    transform: translateY(-50%); /* Adjust for centering */
+    transition: color 0.3s;
+  }
+  
+  .adv-eff-text {
+    margin-right: 20px;       /* Add margin to the right of the text */
+    white-space: nowrap;      /* Prevent text from wrapping */
+  }
+  
+  .remove-cross:hover {
+    color: #A6353B;           /* Darker shade for hover effect */
+  }
+  
+
+  .button-container {
+    display: flex;
+    justify-content: center;   /* Center the button */
+    margin-top: 20px;         /* Space above the button */
+  }
+  
+  .review-submit-button {
+    background-color: #36A463; /* Green color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;           /* Font size */
+    transition: background-color 0.3s;
+  }
+  
+  .review-submit-button:hover {
+    background-color: #2C8C8C; /* Dark Cyan color on hover */
+  }
+
+  .product-image {
+    width: 100%; /* Make image responsive */
+    height: auto; /* Make image responsive */
+    object-fit: cover; /* Ensure image covers the tile */
+  }
+  
+  .product-name {
+    display: none; /* Hide the product name */
+  }
+
+  .imgsa {
+    padding-top: 40px;
+    padding-left: 400px;
+  }
